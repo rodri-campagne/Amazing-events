@@ -1,4 +1,75 @@
 .logo {
-    width: 200px;
+
     height: 50px;
+    margin-left: 15px;
+}
+
+.bastidor{
+    width: 50% !important;
+    box-sizing: border-box;
+}
+
+.title {
+    font-size: 40px;
+}
+
+.nav-btn{
+    margin-left: 5px;
+}
+
+.nav-width{
+    width: 100% !important;
+    margin: 0 !important;
+}
+
+.nav{
+    width: 50% !important;
+    padding: 0 !important;
+}
+
+.banner{
+    width: 100vw !important;
+}
+
+.banner-title{
+    font-size: 35px;
+}
+
+body{
+    background-color: #74EBD5;
+    background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+}
+
+.container-box{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.contact{
+    margin-top: 30px;
+}
+
+.tarjeta{
+    width: 25% !important;
+}
+
+.img-fit{
+    height: 200px;
+    object-fit: cover;
+}
+
+.main-table{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin: 30px;
+}
+
+.cohort{
+    font-size: 20px;
+}
+
+.footer{
+    margin-top: 10px;
 }
