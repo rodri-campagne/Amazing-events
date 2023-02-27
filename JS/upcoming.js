@@ -2,11 +2,12 @@ console.log(data);
 const events = data.events
 console.log(events);
 
-let allEvents = []
+let futureEvents = []
 
-function printEvents(){
+function printFutureEvents(){
     for (let card of events){
-    let listaEvents = 
+     if (card.date>data.currentDate){ 
+        let listaEvents = 
     `<div class="event-card col h-100 tarjeta">
         <div class="card shadow-sm">
             <img src="${card.image}" alt="${card.name}" class="img-fit">
@@ -28,11 +29,13 @@ function printEvents(){
             </div>
         </div>
     </div>`
-        allEvents.push(listaEvents);
-        console.log(allEvents);
+              
+            futureEvents.push(listaEvents);
+            console.log(futureEvents);
+        } 
     }
-    let cardEvent = document.getElementById(`cardContainer`);
-    cardEvent.innerHTML = allEvents.join(``);
+    let cardEvent = document.getElementById(`futureContainer`);
+    cardEvent.innerHTML = futureEvents.join(``);
 }
 
-printEvents();
+printFutureEvents();
