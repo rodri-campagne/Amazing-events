@@ -17,14 +17,14 @@ function printEvents(){
                 
                 <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">                                
-                        <button type="button" class="btn btn-sm btn-outline-info"><a href="details.html">View event</a></button>
+                        <button type="button" class="btn btn-sm btn-outline-info"><a href="details.html?id=${card._id}">View event</a></bsutton>
                     </div>
                     <small class="text-muted">${card.price}</small>
                 </div>
             </div>
 
             <div class="card-footer">
-                <small class="text-muted">Last updated 10 min ago</small>
+                <small class="text-muted">Last updated 10 misn ago</small>
             </div>
         </div>
     </div>`
